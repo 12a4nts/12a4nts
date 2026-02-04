@@ -1,0 +1,132 @@
+/* TỐI ƯU TOÀN CỤC */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* BANNER */
+          /* PHẦN BANNER - ĐÃ CHỈNH TỶ LỆ VÀ CHÈN ẢNH */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 450px; 
+            /* Dòng dưới đây dùng để chèn ảnh Banner và làm mờ nền để nổi bật chữ */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://12a4nts.github.io/12a4nts/tran1.png') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff; /* Màu chữ trắng (#fff) */
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            padding: 20px 40px;
+            border: 3px solid #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            max-width: 80%;
+        }
+
+        /* THANH GIỚI THIỆU */
+        .intro-bar {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background: linear-gradient(135deg, #FFF59D 0%, #FFA726 100%);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .intro-item h3 {
+            color: #003366;
+            margin-bottom: 5px;
+        }
+
+        /* BỐ CỤC GRID SO LE */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            background: #fff;
+        }
+
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px;
+            min-height: 400px;
+        }
+        .grid-image {
+            min-height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+.slogan {
+    text-align: center;
+    width: 100%;
+}
+        .site-footer {
+            background-color: #ffffff;
+            border-top: 1px solid #eee;
+            padding: 50px 0 20px 0;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .footer-info h4 {
+            color: #003366;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #555;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ffcc00;
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px dashed #ddd;
+            font-size: 13px;
+            color: #999;
+        }
+       /* ĐIỆN THOẠI */
+        @media (max-width: 768px) {
+            .banner { height: 300px; }
+            .banner h1 { font-size: 1.5rem; padding: 10px; }
+            .content-grid { grid-template-columns: 1fr; }
+            .grid-item { order: 2; padding: 30px; min-height: auto; }
+            .grid-image { order: 1; min-height: 250px; }
+            .footer-content { flex-direction: column; text-align: center; gap: 30px; }
+        }
