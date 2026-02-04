@@ -38,7 +38,7 @@
             display: flex;
             justify-content: space-around;
             padding: 40px 10%;
-            background: linear-gradient(175deg, #E6EE9C 0%, #FFCA28 100%);
+            background: linear-gradient(135deg, #FFF59D 0%, #FFA726 100%);
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
